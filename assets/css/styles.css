@@ -200,8 +200,58 @@ img {
   z-index: 10;
 }
 
+/* Button Styling */
+.gallery__button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.gallery__button {
+  background-color: var(--first-color);
+  color: var(--text-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.gallery__button:hover {
+  background-color: hsl(30, 20%, 40%);
+  transform: scale(1.05);
+}
+
+.gallery__button:active {
+  transform: scale(0.95);
+}
+
 .swiper-horizontal.swiper-css-mode > .swiper-wrapper {
   scroll-snap-type: initial;
+}
+
+/* Letter Wrapper */
+.letter-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Letter Container */
+.letter {
+  font-family: 'Poppins', sans-serif;
+  color: var(--text-color-black);
+  line-height: 1.6;
 }
 
 /*=============== BREAKPOINTS ===============*/
